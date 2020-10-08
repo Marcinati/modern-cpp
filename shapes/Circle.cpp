@@ -27,3 +27,9 @@ void Circle::print() const
               << "          area: " << getArea() << std::endl
               << "     perimeter: " << getPerimeter() << std::endl;
 }
+
+[[deprecated("please, use M_PI instead")]]
+double Circle::getPi() const
+{
+    return 3.0;
+}

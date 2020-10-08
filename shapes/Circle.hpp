@@ -12,6 +12,9 @@ public:
     double getPerimeter() const override;
     double getRadius() const;
     void print() const override;
+    
+    [[deprecated("please, use M_PI instead")]]
+    double getPi() const;
 
 private:
     Circle() = delete;
